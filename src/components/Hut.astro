@@ -1,0 +1,60 @@
+---
+import Carousel from "./Carousel.astro";
+
+const images = [
+  {
+    gallery: [
+      "https://placehold.co/400",
+      "https://placehold.co/400",
+      "https://placehold.co/400",
+      "https://placehold.co/400",
+    ],
+    habitacion: "Colibri",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    gallery: [
+      "https://placehold.co/400",
+      "https://placehold.co/400",
+      "https://placehold.co/400",
+      "https://placehold.co/400",
+    ],
+    habitacion: "Tucan",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+  },
+  {
+    gallery: [
+      "https://placehold.co/400",
+      "https://placehold.co/400",
+      "https://placehold.co/400",
+      "https://placehold.co/400",
+    ],
+    habitacion: "Ajolote",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    gallery: [
+      "https://placehold.co/400",
+      "https://placehold.co/400",
+      "https://placehold.co/400",
+      "https://placehold.co/400",
+    ],
+    habitacion: "Rio",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+];
+---
+
+<section class="z-20">
+  {
+    images.map((item) => (
+      <div class="mb-6 rounded-xl">
+        <Carousel item={item} />
+      </div>
+    ))
+  }
+</section>
